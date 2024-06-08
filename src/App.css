@@ -44,6 +44,15 @@ body {
 .section {
   padding: 60px 20px;
   margin-top: 50px;
+  background-color: #F8F3EB;
+  height: 100vh; /* Высота секции на весь экран */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start; /* Выравнивание по левому краю */
+  padding-left: 140px; /* Отступ от левого края */
+  position: relative; /* Обязательно для абсолютной позиции изображения */
+
 }
 
 #home {
@@ -59,12 +68,14 @@ body {
 
 h1 {
   margin: 0; /* Удалить любой внешний отступ */
+  font-size: 65px; /* Увеличение размера шрифта h1 в два раза */
 }
 
 .text-container {
   display: flex;
   align-items: center;
   margin-top: 5px; /* Небольшой отступ между заголовком и текстом */
+  padding-left: 90px;
 }
 
 .logo {
@@ -76,6 +87,8 @@ h1 {
 
 p {
   margin: 0; /* Удалить любой внешний отступ */
+  font-size: 2em; /* Увеличение размера шрифта h1 в два раза */
+  
 }
 
 .leather-tool {
