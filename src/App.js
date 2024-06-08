@@ -1,23 +1,70 @@
-import logo from './logo.svg';
+import React from 'react';
+import { Link, animateScroll as scroll } from 'react-scroll';
+import Home from './components/Home';
+import AboutMe from './components/AboutMe';
+import Shop from './components/Shop';
+import Info from './components/Info';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <nav className="navbar">
+        <ul>
+          <li>
+            <Link
+              activeClass="active"
+              to="home"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+            >
+              Home
+            </Link>
+          </li>
+          <li>
+            <Link
+              activeClass="active"
+              to="about-me"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+            >
+              About Me
+            </Link>
+          </li>
+          <li>
+            <Link
+              activeClass="active"
+              to="shop"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+            >
+              Shop
+            </Link>
+          </li>
+          <li>
+            <Link
+              activeClass="active"
+              to="info"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+            >
+              Info
+            </Link>
+          </li>
+        </ul>
+      </nav>
+      <Home />
+      <AboutMe />
+      <Shop />
+      <Info />
     </div>
   );
 }
