@@ -1,7 +1,14 @@
+
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+}
+
+#home, #about-me, #shop, #info {
+  padding-left: 100px; /* Отступ от левого края */
+ 
 }
 
 .navbar {
@@ -9,12 +16,9 @@ body {
   width: 100%;
   background-color: #333;
   overflow: hidden;
-}
-
-.navbar {
-  top: 0; 
-  left: 0; 
-  z-index: 1000; 
+  top: 0;
+  left: 0;
+  z-index: 1000;
 }
 
 .navbar ul {
@@ -43,26 +47,13 @@ body {
 
 .section {
   padding: 60px 20px;
-  margin-top: 50px;
   background-color: #F8F3EB;
   height: 100vh; /* Высота секции на весь экран */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start; /* Выравнивание по левому краю */
-  padding-left: 140px; /* Отступ от левого края */
-  position: relative; /* Обязательно для абсолютной позиции изображения */
-
-}
-
-#home {
-  background-color: #F8F3EB;
-  height: 100vh; /* Высота секции на весь экран */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start; /* Выравнивание по левому краю */
-  padding-left: 140px; /* Отступ 40 пикселей от левого края */
+  padding-left: 100px; /* Отступ от левого края */
   position: relative; /* Обязательно для абсолютной позиции изображения */
 }
 
@@ -88,7 +79,6 @@ h1 {
 p {
   margin: 0; /* Удалить любой внешний отступ */
   font-size: 2em; /* Увеличение размера шрифта h1 в два раза */
-  
 }
 
 .leather-tool {
@@ -100,14 +90,40 @@ p {
   height: 500px;
 }
 
-#about-me {
-  background-color: #e0e0e0;
+
+
+.pageHeader-container {
+  position: absolute;
+  top: 0px; /* Расположение 40 пикселей от верхнего края */
+  left: 80px; /* Отступ от левого края */
+}
+
+.profile_photo {
+  position: absolute;
+  left: 80px; /* Отступ 80 пикселей от левого края */
+  top: 50%; /* Вертикальное центрирование */
+  transform: translateY(-50%);
+  width: 340px;
+  height: 450px;
+}
+
+.aboutProject {
+  position: absolute;
+  left: 52%;
+  transform: translateX(-50%);
+  width: 35%; /* Ширина текста */
+  font-size: 1em; /* Уменьшение размера шрифта в два раза */
+}
+
+.wallet {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 350px;
+  height: 350px;
 }
 
 #shop {
   background-color: #d0d0d0;
-}
-
-#info {
-  background-color: #c0c0c0;
 }
